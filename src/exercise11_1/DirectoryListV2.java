@@ -31,27 +31,22 @@ public class DirectoryListV2 {
 			else
 				System.out.println("That file is not a directory.");
 		} else {
-//            files = directory.list();
 			drillFile(directory);
-//            System.out.println("Files in directory \"" + directory + "\":");
-//	        if (files != null) {
-//		        for (String file : files)
-//					drillFile(directory,file);
-//                   System.out.println("   " + file);
-//	        }
 		}
 
 	} // end main()
 
 	private static void drillFile(File directory) {
 		String[] files = directory.list();
-		for (String file : files) {
-			File tempDir = new File(directory, file);
-			if (tempDir.isFile())
-				System.out.println("  " + file);
-			else if (tempDir.isDirectory()) {
-				System.out.println("Files in directory \"" + directory + "\":");
-				drillFile(tempDir);
+		if (files != null) {
+			for (String file : files) {
+				File tempDir = new File(directory, file);
+				if (tempDir.isFile())
+					System.out.println("  " + file);
+				else if (tempDir.isDirectory()) {
+					System.out.println("Files in directory \"" + directory + "\":");
+					drillFile(tempDir);
+				}
 			}
 		}
 
