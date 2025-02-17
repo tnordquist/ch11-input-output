@@ -1,0 +1,12 @@
+A Java application can accept any number of arguments from the command line.
+This allows the user to specify configuration information when the application is launched.
+
+The user enters command-line arguments when invoking the application and specifies them after the name of the class to be
+run.
+For example, suppose a Java application called Sort sorts lines in a file.
+To sort the data in a file named friends.txt, a user would enter: java Sort friends.txt.
+
+When an application is launched, the runtime system passes the command-line arguments to the application's main method
+via an array of Strings.
+In the previous example, the command-line arguments passed to the Sort application in an array that contains a single
+String: "friends.txt".

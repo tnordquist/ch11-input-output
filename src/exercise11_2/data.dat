@@ -1,0 +1,13 @@
+This README file explains how to use the example programs for
+"Introduction to Programming Using Java, Version 9.0, Swing edition",
+which is freely available on the web at http://math.hws.edu/javanotes-swing.
+
+Although some exercise solutions will work with earlier versions, Java 17 is required for many of them.
+Information about getting Java can be found in Section 2.6 of the book.
+
+The web site for the textbook includes Java source code files for the examples in the book.
+If you download the web site,you can find the files in a folder named "sources."
+The example programs are also available as a separate download.
+The files are arranged by chapter, with a folder inside "sources" for each chapter.
+There are also links to individual files in the index.html file inside "sources,"
+or on the web at http://math.hws.edu/javanotes-swing/sources/index.html.
